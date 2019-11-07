@@ -6,9 +6,10 @@ function addLeadingZero(n) {
     return n;
 }
 
-function windTheClock(timeZoneOffset)
+function windTheClock()
 {
     var d = new Date();
+    var timeZoneOffset = -d.getTimezoneOffset()/60;
     d.setHours(d.getUTCHours() + timeZoneOffset); 
     var h = d.getHours();
     var m = d.getMinutes();
@@ -21,7 +22,8 @@ function windTheClock(timeZoneOffset)
 }
 
 window.onload = function() {
-    windTheClock(2);
+    windTheClock();
 }
+
 
 
