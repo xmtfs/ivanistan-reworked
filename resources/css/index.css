@@ -26,6 +26,12 @@ text-align:center
   #mail{
     text-align: center
   }
+  /*navbar 2*/
+  .navbar-brand {
+    text-align:center
+    width 100%;
+    position:absolute;
+  }
  /* navbar */
 ul {
     list-style-type: none;
